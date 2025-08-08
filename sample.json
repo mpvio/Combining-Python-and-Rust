@@ -1,0 +1,9 @@
+{
+  "['name']": "Alice -> Robert",
+  "['age']": "10 -> 12",
+  "['sentence']": "{cat -> owl} in a {hat -> cowl}",
+  "iterable_item_removed": [
+    "['ls'][1]",
+    "['ls'][2]"
+  ]
+}
