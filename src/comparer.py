@@ -11,6 +11,7 @@ def simplify(diffs: dict):
     """flatten certain values to lists"""
     fields = ['dictionary_item_added', 'dictionary_item_removed', 'type_changes', "iterable_item_removed"]
     for field in fields:
+        # convert field to list AND remove "root" from each value
         if field in diffs: diffs[field] = removeRootFromList(list(diffs[field]))
     if "values_changed" in diffs:
         changes: dict = diffs["values_changed"]
